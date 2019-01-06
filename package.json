@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://dudeonyx.github.io/rtsk-async-example",
   "dependencies": {
-    "@redux-ts-starter-kit/core": "0.1.9",
+    "@redux-ts-starter-kit/core": "0.1.11",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-redux": "^6.0.0",

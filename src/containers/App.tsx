@@ -1,5 +1,4 @@
 import React, { Component, MouseEvent } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPostsIfNeeded } from '../actions';
 import Picker from '../components/Picker';
