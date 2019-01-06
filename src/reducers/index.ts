@@ -1,4 +1,5 @@
 import { createSlice } from '@redux-ts-starter-kit/core';
+import { IStore } from '..';
 
 export const {
   actions: { selectSubreddit },
@@ -57,7 +58,7 @@ export const {
 } = createSlice({
   slice: 'postsBySubreddit',
   cases: {
-    invalidateSubreddit: (state, subreddit: string) => {
+    invalidateSubreddit: (state, subreddit: string, _: IStore) => {
       state[subreddit] = posts(state[subreddit], invalidateSub());
     },
     requestPosts: (state, subreddit: string) => {

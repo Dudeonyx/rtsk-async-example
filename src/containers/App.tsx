@@ -87,8 +87,9 @@ const mapStateToProps = (state: IStore) => {
   const selectedSubreddit = selectedSubredditSelectors.getSlice(state);
   const postsBySubreddit = postsBySubredditSelectors.getSlice(state);
   const posts = postsSelectors.items(postsBySubreddit[selectedSubreddit]) || [];
-  const isFetching =
-    postsSelectors.isFetching(postsBySubreddit[selectedSubreddit]) || true;
+  const isFetching = postsSelectors.isFetching(
+    postsBySubreddit[selectedSubreddit],
+  );
   const lastUpdated =
     postsSelectors.receivedAt(postsBySubreddit[selectedSubreddit]) || null;
 
